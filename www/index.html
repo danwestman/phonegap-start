@@ -36,13 +36,16 @@
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-						document.addEventListener("deviceready", onDeviceReady, false);
-            app.initialize();
-
+						
 						function onDeviceReady()
 						{
+							alert("got it!");
 							window.plugins.videoPlayer.play("http://hosted.earthchannel.com/test/test.mp4");
 						}
+
+						document.addEventListener("deviceready", onDeviceReady, false);
+
+						app.initialize();
         </script>
     </body>
 </html>
